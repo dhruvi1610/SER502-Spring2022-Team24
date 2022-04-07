@@ -1,0 +1,57 @@
+Team 24 - Contribution of the team members
+=================================
+
+1. Dhruvi Modi
+
+Till now : 
+Generated GitHub Repository for the project
+Worked on creating grammar rules and g4 file rules
+
+Expected contribution for milestone-2:
+Intermediate format to runtime format contribution
+
+
+2. Krishna Pandya
+
+Till now :
+Created grammar rules by removing left recursion
+Added g4 file to github
+
+
+Expected contribution for milestone-2: 
+Generation of parse-tree from tokens
+
+
+3. Jay Patel
+
+Till now :
+Searched about tools that can be used to create lexer and parser. 
+Created summary for milestone-1.
+
+Expected contribution for milestone-2: 
+Generation of intermediate code from parse tree
+
+
+4. Keyur Desai
+
+Till now :
+Worked on design rules and syntax
+Created workflow for the language
+
+Expected contribution for milestone-2: 
+Verify source-code and work on token generations and errors 
+
+
+
+
+5. Anand Bhattacharya
+
+Till now : 
+
+Worked on Language syntax and design  
+Added design rules for milestone-1
+
+
+Expected contribution for milestone-2: 
+Verity Source code and work on compilation errors for token generations
+
