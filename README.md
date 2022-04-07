@@ -1,10 +1,14 @@
 # SER502-Team24
-Semester Project for SER 502 Spring 2022
-System  on  which  your  compiler  and  runtime  are  built  (GNUstep,  Linux,  Unix, 
-Windows or Mac OS) 
-Tools used 
-Directions/instructions to install your language 
-Directions/instructions to build and run your language (compiler/runtime). 
-ONE  LINE  of  bash  script  that  builds  the  compiler  and  ONE  LINE  that  runs  the 
-runtime. 
-Link to the YouTube video 
+
+********************************Semester Project for SER 502 Spring 2022******************************************
+
+Tools that will be used:
+Programming Language: Java
+For generating lexical analyzer and parser: ANTLR4 
+Integrated Development Environment(IDE): Eclipse
+Version Control System/Platform: Git and GitHub
+
+
+Environment used for the project: Windows system
+ 
+Link to the YouTube video(will be added in milestone-2) : 
