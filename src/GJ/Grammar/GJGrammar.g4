@@ -22,10 +22,13 @@ terms
 
 expr
 	: 'ank' IDENTIFIER (isEqualto operator)?              
-	| 'tark' IDENTIFIER (isEqualto booleanExpression)?         
+	| 'tark' IDENTIFIER (isEqualto booleanExpression)?
+    | 'vakya' IDENTIFIER (isEqualto stringExpression)?         
 	| IDENTIFIER isEqualto operator                       
-	| IDENTIFIER isEqualto booleanExpression                      
+	| IDENTIFIER isEqualto booleanExpression
+    | IDENTIFIER isEqualto stringExpression            
     ;
+
 
 /* booleanExpression includes logic and comparison operators also maintains uniformity*/
 booleanExpression
@@ -41,6 +44,7 @@ booleanExpression
 arithmeticComparison
     : operator op=(GreaterThan|Lessthan|GreaterEqual|LessEqual|Equals|NotEqual) operator  # operatorComparison
     ;
+
 /* Arithmetic Operations */
 operator
     : operator op=(MULTIPLY|DIVIDE) operator              
@@ -49,6 +53,14 @@ operator
     | SUBTRACTION? DIGITS                                                        
     | SUBTRACTION? IDENTIFIER                                                    
     ;
+
+/* stringExpression  includes string datatype and string comparison operator */
+
+stringExpression
+    : stringExpression se=(Equals|NotEqual) stringExpression
+    | STR
+    ;
+
 /* condition expression block for loop*/
 cond_expressn
     : '(' booleanExpression ')'
@@ -92,12 +104,17 @@ BOOL
 	| 'Na'
 	;
 
+/* Takes String values */
+
+STR : '"'[a-zA-Z0-9]*'"''\n' ;
+
+
 /* Arithmetic Operators */
 
-ADD               : '+';
-SUB              : '-';
-MUL           : '*';
-DIV             : '/';
+ADDITION               : '+';
+SUBTRACTION              : '-';
+MULTIPLY           : '*';
+DIVIDE             : '/';
 AND                : '&&';
 OR                 : '||';
 Lessthan          : '<';
