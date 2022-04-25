@@ -49,7 +49,8 @@ arithmeticComparison
 operator
     : operator op=(MULTIPLY|DIVIDE) operator              
     | operator op=(ADDITION|SUBTRACTION) operator                  
-    | '(' operator ')'                                             
+    | '(' operator ')'  
+	| operator op=QUESTIONMARK expr bop=COLON expr
     | SUBTRACTION? DIGITS                                                        
     | SUBTRACTION? IDENTIFIER                                                    
     ;
@@ -123,6 +124,9 @@ LessEqual    : '<=';
 GreaterEqual : '>=';
 NotEqual          : '!=';
 Equals        : '==';
+QUESTIONMARK   :'?';
+COLON		:':';
+
 
 /* Identifiers */
 IDENTIFIER
