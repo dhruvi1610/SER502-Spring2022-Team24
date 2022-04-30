@@ -1,4 +1,4 @@
-package runtime;
+package Runtime.runtime;
 
 public class DataValues {
 
@@ -15,6 +15,14 @@ public class DataValues {
     public Integer asInt() {
         return (Integer)value;
     }
+
+    public String getDataType() {
+        try {
+            int i = (Integer)value;
+            return "Integer";
+        }catch (ClassCastException e) {
+            return "Boolean";
+        }
 
 
     @Override
