@@ -23,6 +23,7 @@ public class DataValues {
         }catch (ClassCastException e) {
             return "Boolean";
         }
+    }
 
 
     @Override
