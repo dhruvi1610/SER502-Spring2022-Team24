@@ -23,13 +23,13 @@ import org.antlr.v4.runtime.CharStreams;
 
 public class CompilerMainGJ {
 	public static void main(String[] args) throws IOException {
-		try {			
+		try {
 			//if (args.length > 0) {
-				String filePath = "Sample/example4.gj";
+				String filePath = "data/example4.gj";
 				CharStream antlrIntermediate = CharStreams.fromFileName(filePath); //takes stream of characters from file
 				GJGrammarLexer GJLexer = new GJGrammarLexer(antlrIntermediate); //lexer that takes intermediate code
-				CommonTokenStream tkStream = new CommonTokenStream(GJLexer); //create tokens from Lexter 
-				GJGrammarParser GJparser = new GJGrammarParser(tkStream); 
+				CommonTokenStream tkStream = new CommonTokenStream(GJLexer); //create tokens from Lexter
+				GJGrammarParser GJparser = new GJGrammarParser(tkStream);
 				ParseTree t = GJparser.program(); //create parse tree
 
 				GJCompiler gjc = new GJCompiler(); //create GJCompiler object
