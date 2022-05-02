@@ -1,0 +1,14 @@
+{
+    /* Factorial program */
+
+    ank n = 5
+    ank x = 1
+ 
+    sudhi(n > 1)
+    {
+        ank b = n - 1
+        x = x * n
+        n = b
+    }
+    batav(x)
+}
