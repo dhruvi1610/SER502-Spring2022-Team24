@@ -1,0 +1,12 @@
+{
+    ank a=5
+    ank b=2
+    ank c=0
+
+    jo(c==0)
+    {
+        c=a+b
+        batav(c)
+    }
+    bas
+}

@@ -1,0 +1,14 @@
+{
+	tark a = 0==0
+	jo(a)
+	{
+		ank b = 90
+		ank c = 100
+		jo(b<c)
+		{
+			batav(c)
+		}
+		bas
+	}
+	bas
+}

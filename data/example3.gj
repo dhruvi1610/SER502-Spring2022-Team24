@@ -1,0 +1,19 @@
+{
+    ank a=8
+    ank b=3
+    ank c=0
+
+    jo(a>1 && b<5)
+    {
+        c=a*b
+    }
+   
+    toh
+    {
+        c=a/b
+    }
+    bas
+
+    batav(c)
+
+}

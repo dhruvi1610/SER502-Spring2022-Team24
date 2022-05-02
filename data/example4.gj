@@ -1,0 +1,15 @@
+{ /* Factorial program */
+    ank a = 0
+    ank b = 1
+    ank c = 0
+    ank n = 0
+
+    sudhi(n < 10)
+    {
+        c = a + b 
+        batav(c)
+        a = b
+        b = c
+        n = n + 1
+    }
+}

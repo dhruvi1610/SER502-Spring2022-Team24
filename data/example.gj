@@ -1,0 +1,23 @@
+{
+    ank x = 2
+    ank y = 3
+
+    jo (x > 1 && y < 3)
+    {
+        batav (x)
+        batav (y)
+    }
+    toh
+    {
+        batav (y)
+    }
+    bas
+	
+
+    sudhi (x < y)
+    {
+        x = x + 1
+    }    
+
+    batav(x)
+}
