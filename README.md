@@ -12,13 +12,13 @@ Tools used -
 
 
 System that are used to build compiler and runtime -
-- Windows 
+- Windows
 - MacOS
 
 
 Programming Language used to create compiler and runtime: java
-For generating lexical analyzer and parser: ANTLR4 
-Integrated Development Environment(IDE): Eclipse 
+For generating lexical analyzer and parser: ANTLR4
+Integrated Development Environment(IDE): Eclipse
 Version Control System/Platform: Git and GitHub
 
 Follow the below steps to install this git project:
@@ -27,9 +27,10 @@ Follow the below steps to install this git project:
 2. Download this git project and Unzip the project in a new folder.
 3. Open the project in Eclipse using following steps:
     Files >> Open Project From File System. Browser your project folder here upto extracted project directory.
+4. Add antlr-4.9-complete.jar file from resource folder to classpath of the project. You can do this by going to project properties and going to libraries section and there select the classpath and in the right sidebar click on add external jar and there select the antlr-4.9-complete.jar. NOTE: Make sure there are not multiple antlr fies in the classpath and after adding it it doesn't show as missing!
 
 For Developers:
-Step 1: 
+Step 1:
 Install ANTLR4 step by step guide is provided.
 https://www.youtube.com/watch?v=p2gIBPz69DM
 Step 2:
@@ -39,5 +40,5 @@ run using grun 'GJGrammar.g4 program', here prgram is starting symbol of grammar
 Step 4:
 Compile java files using 'javac GJGrammar*.java'
 Environment used for the project: Windows system
- 
-Link to the YouTube video(will be added in milestone-2) : 
+
+Link to the YouTube video(will be added in milestone-2) :
