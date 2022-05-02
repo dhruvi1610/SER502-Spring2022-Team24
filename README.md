@@ -1,12 +1,32 @@
 # SER502-Team24
 
 ********************************Semester Project for SER 502 Spring 2022******************************************
+Language Name : GJ
+We are extremely delighted to come up with a language that has words similar to our language ‘Gujarati’. The keywords for this language are aligned to the traditional Gujarati language. We are experiencing that influence of western culture is increasing day by day in India, and people are leaning more towards languages that are internationally recognized, spoken and understood. We are in a hope that, one day this language will be more popular and people will want to learn Gujarati language to better understand a widely accepted programming language(GJ).
 
-Tools that will be used:
-Programming Language: Java
+Tools used -
+- Eclipse
+- Antlr
+- Git
+
+
+
+System that are used to build compiler and runtime -
+- Windows 
+- MacOS
+
+
+Programming Language used to create compiler and runtime: java
 For generating lexical analyzer and parser: ANTLR4 
 Integrated Development Environment(IDE): Eclipse 
 Version Control System/Platform: Git and GitHub
+
+Follow the below steps to install this git project:
+
+1. Clone this git project or
+2. Download this git project and Unzip the project in a new folder.
+3. Open the project in Eclipse using following steps:
+    Files >> Open Project From File System. Browser your project folder here upto extracted project directory.
 
 For Developers:
 Step 1: 
