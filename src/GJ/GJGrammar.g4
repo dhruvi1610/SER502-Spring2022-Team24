@@ -1,14 +1,15 @@
+/* Krishna Pandya */
 grammar GJGrammar;
 
 /* Program */
-program 
-        : '{' body '}' 
+program
+        : '{' body '}'
         ;
 
 /* Body of the Program */
 body
 	:
-	| terms+ 
+	| terms+
 	;
 
 /* Terms that will be included in the body */
@@ -20,23 +21,23 @@ terms
 /* expr will have assignment expressions for integer and boolean */
 
 expr
-	: 'ank' IDENTIFIER (isEqualto operator)?   #integerAssignment           
+	: 'ank' IDENTIFIER (isEqualto operator)?   #integerAssignment
 	| 'tark' IDENTIFIER (isEqualto booleanExpression)? #booleanAssignment
     | 'vakya' IDENTIFIER (isEqualto stringExpression)? #stringAssignment
-	| IDENTIFIER isEqualto operator  #integerAssignment                     
+	| IDENTIFIER isEqualto operator  #integerAssignment
 	| IDENTIFIER isEqualto booleanExpression #booleanAssignment
-    | IDENTIFIER isEqualto stringExpression #stringAssignment            
+    | IDENTIFIER isEqualto stringExpression #stringAssignment
     ;
 
 
 /* booleanExpression includes logic and comparison operators also maintains uniformity*/
 booleanExpression
     : booleanExpression op=(Equals|NotEqual) booleanExpression #expressionBoolean
-    | booleanExpression op=(AND|OR) booleanExpression #booleanConnectorExpression              
-    | arithmeticComparison #booleanComparisonExpression                                     
-    | '(' booleanExpression ')' #booleanParenthesisExpression                              
-    | BOOL #onlyBooleanExpression											  
-    | IDENTIFIER #onlyBooleanIdentifier											
+    | booleanExpression op=(AND|OR) booleanExpression #booleanConnectorExpression
+    | arithmeticComparison #booleanComparisonExpression
+    | '(' booleanExpression ')' #booleanParenthesisExpression
+    | BOOL #onlyBooleanExpression
+    | IDENTIFIER #onlyBooleanIdentifier
     ;
 
 /* Arithmetic Compsrisons for datatype Integer(in this language ank)*/
@@ -46,12 +47,12 @@ arithmeticComparison
 
 /* Arithmetic Operations */
 operator
-    : operator op=(MULTIPLY|DIVIDE) operator #numberMulDivExpr             
-    | operator op=(ADDITION|SUBTRACTION) operator #numberAddSubExpr                  
-    | '(' operator ')' #numberParenthesesExpr 
+    : operator op=(MULTIPLY|DIVIDE) operator #numberMulDivExpr
+    | operator op=(ADDITION|SUBTRACTION) operator #numberAddSubExpr
+    | '(' operator ')' #numberParenthesesExpr
 	| operator op=QUESTIONMARK expr bop=COLON expr #numberTernaryExpr
-    | SUBTRACTION? DIGITS  #onlyNumberExpr                                                        
-    | SUBTRACTION? IDENTIFIER #onlyNumberIdentifier                                                   
+    | SUBTRACTION? DIGITS  #onlyNumberExpr
+    | SUBTRACTION? IDENTIFIER #onlyNumberIdentifier
     ;
 
 /* stringExpression  includes string datatype and string comparison operator */

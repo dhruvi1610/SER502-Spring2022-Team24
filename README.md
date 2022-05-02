@@ -29,6 +29,10 @@ Follow the below steps to install this git project:
     Files >> Open Project From File System. Browser your project folder here upto extracted project directory.
 4. Add antlr-4.9-complete.jar file from resource folder to classpath of the project. You can do this by going to project properties and going to libraries section and there select the classpath and in the right sidebar click on add external jar and there select the antlr-4.9-complete.jar. NOTE: Make sure there are not multiple antlr fies in the classpath and after adding it it doesn't show as missing!
 
+Steps for using your own GJ code:
+- Add your code of the program to the file under data folder(You can either create a new file or change the code of any existing file with the GJ extension)
+- Set the file path in the CompilerMainGJ.java file and run that file. It will generate the egj file and now run egj file, set the path in the RuntimeMainGJ.java file and it will produce the .output file, which is the evaluation of our intermediate code.
+
 For Developers:
 Step 1:
 Install ANTLR4 step by step guide is provided.
@@ -41,4 +45,4 @@ Step 4:
 Compile java files using 'javac GJGrammar*.java'
 Environment used for the project: Windows system
 
-Link to the YouTube video(will be added in milestone-2) :
+Link to the YouTube video(will be added in milestone-2) : https://www.youtube.com/watch?v=iBnJ_Os4QAg
