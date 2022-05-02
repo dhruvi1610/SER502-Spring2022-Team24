@@ -1,3 +1,5 @@
+package GJ;
+
 // Generated from GJGrammar.g4 by ANTLR 4.9
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -51,61 +53,217 @@ public class GJGrammarBaseListener implements GJGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr(GJGrammarParser.ExprContext ctx) { }
+	@Override public void enterIntegerAssignment(GJGrammarParser.IntegerAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr(GJGrammarParser.ExprContext ctx) { }
+	@Override public void exitIntegerAssignment(GJGrammarParser.IntegerAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBooleanExpression(GJGrammarParser.BooleanExpressionContext ctx) { }
+	@Override public void enterBooleanAssignment(GJGrammarParser.BooleanAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBooleanExpression(GJGrammarParser.BooleanExpressionContext ctx) { }
+	@Override public void exitBooleanAssignment(GJGrammarParser.BooleanAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOperatorComparison(GJGrammarParser.OperatorComparisonContext ctx) { }
+	@Override public void enterStringAssignment(GJGrammarParser.StringAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOperatorComparison(GJGrammarParser.OperatorComparisonContext ctx) { }
+	@Override public void exitStringAssignment(GJGrammarParser.StringAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOperator(GJGrammarParser.OperatorContext ctx) { }
+	@Override public void enterExpressionBoolean(GJGrammarParser.ExpressionBooleanContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOperator(GJGrammarParser.OperatorContext ctx) { }
+	@Override public void exitExpressionBoolean(GJGrammarParser.ExpressionBooleanContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStringExpression(GJGrammarParser.StringExpressionContext ctx) { }
+	@Override public void enterOnlyBooleanIdentifier(GJGrammarParser.OnlyBooleanIdentifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStringExpression(GJGrammarParser.StringExpressionContext ctx) { }
+	@Override public void exitOnlyBooleanIdentifier(GJGrammarParser.OnlyBooleanIdentifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOnlyBooleanExpression(GJGrammarParser.OnlyBooleanExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOnlyBooleanExpression(GJGrammarParser.OnlyBooleanExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBooleanParenthesisExpression(GJGrammarParser.BooleanParenthesisExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBooleanParenthesisExpression(GJGrammarParser.BooleanParenthesisExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBooleanComparisonExpression(GJGrammarParser.BooleanComparisonExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBooleanComparisonExpression(GJGrammarParser.BooleanComparisonExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBooleanConnectorExpression(GJGrammarParser.BooleanConnectorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBooleanConnectorExpression(GJGrammarParser.BooleanConnectorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumberComparisonExpression(GJGrammarParser.NumberComparisonExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumberComparisonExpression(GJGrammarParser.NumberComparisonExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumberMulDivExpr(GJGrammarParser.NumberMulDivExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumberMulDivExpr(GJGrammarParser.NumberMulDivExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumberTernaryExpr(GJGrammarParser.NumberTernaryExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumberTernaryExpr(GJGrammarParser.NumberTernaryExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumberParenthesesExpr(GJGrammarParser.NumberParenthesesExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumberParenthesesExpr(GJGrammarParser.NumberParenthesesExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOnlyNumberExpr(GJGrammarParser.OnlyNumberExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOnlyNumberExpr(GJGrammarParser.OnlyNumberExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOnlyNumberIdentifier(GJGrammarParser.OnlyNumberIdentifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOnlyNumberIdentifier(GJGrammarParser.OnlyNumberIdentifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNumberAddSubExpr(GJGrammarParser.NumberAddSubExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNumberAddSubExpr(GJGrammarParser.NumberAddSubExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStringExpr(GJGrammarParser.StringExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStringExpr(GJGrammarParser.StringExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOnlyStringExpr(GJGrammarParser.OnlyStringExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOnlyStringExpr(GJGrammarParser.OnlyStringExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

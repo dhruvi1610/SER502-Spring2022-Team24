@@ -1,7 +1,6 @@
 grammar GJGrammar;
 
 /* Program */
-
 program 
         : '{' body '}' 
         ;
@@ -21,51 +20,52 @@ terms
 /* expr will have assignment expressions for integer and boolean */
 
 expr
-	: 'ank' IDENTIFIER (isEqualto operator)?              
-	| 'tark' IDENTIFIER (isEqualto booleanExpression)?
-    | 'vakya' IDENTIFIER (isEqualto stringExpression)?         
-	| IDENTIFIER isEqualto operator                       
-	| IDENTIFIER isEqualto booleanExpression
-    | IDENTIFIER isEqualto stringExpression            
+	: 'ank' IDENTIFIER (isEqualto operator)?   #integerAssignment           
+	| 'tark' IDENTIFIER (isEqualto booleanExpression)? #booleanAssignment
+    | 'vakya' IDENTIFIER (isEqualto stringExpression)? #stringAssignment
+	| IDENTIFIER isEqualto operator  #integerAssignment                     
+	| IDENTIFIER isEqualto booleanExpression #booleanAssignment
+    | IDENTIFIER isEqualto stringExpression #stringAssignment            
     ;
 
 
 /* booleanExpression includes logic and comparison operators also maintains uniformity*/
 booleanExpression
-    : booleanExpression op=(Equals|NotEqual) booleanExpression 
-    | booleanExpression op=(AND|OR) booleanExpression             
-    | arithmeticComparison                                      
-    | '(' booleanExpression ')'                              
-    | BOOL											  
-    | IDENTIFIER											
+    : booleanExpression op=(Equals|NotEqual) booleanExpression #expressionBoolean
+    | booleanExpression op=(AND|OR) booleanExpression #booleanConnectorExpression              
+    | arithmeticComparison #booleanComparisonExpression                                     
+    | '(' booleanExpression ')' #booleanParenthesisExpression                              
+    | BOOL #onlyBooleanExpression											  
+    | IDENTIFIER #onlyBooleanIdentifier											
     ;
 
 /* Arithmetic Compsrisons for datatype Integer(in this language ank)*/
 arithmeticComparison
-    : operator op=(GreaterThan|Lessthan|GreaterEqual|LessEqual|Equals|NotEqual) operator  # operatorComparison
+    : operator op=(GreaterThan|Lessthan|GreaterEqual|LessEqual|Equals|NotEqual) operator  # numberComparisonExpression
     ;
 
 /* Arithmetic Operations */
 operator
-    : operator op=(MULTIPLY|DIVIDE) operator              
-    | operator op=(ADDITION|SUBTRACTION) operator                  
-    | '(' operator ')'  
-	| operator op=QUESTIONMARK expr bop=COLON expr
-    | SUBTRACTION? DIGITS                                                        
-    | SUBTRACTION? IDENTIFIER                                                    
+    : operator op=(MULTIPLY|DIVIDE) operator #numberMulDivExpr             
+    | operator op=(ADDITION|SUBTRACTION) operator #numberAddSubExpr                  
+    | '(' operator ')' #numberParenthesesExpr 
+	| operator op=QUESTIONMARK expr bop=COLON expr #numberTernaryExpr
+    | SUBTRACTION? DIGITS  #onlyNumberExpr                                                        
+    | SUBTRACTION? IDENTIFIER #onlyNumberIdentifier                                                   
     ;
 
 /* stringExpression  includes string datatype and string comparison operator */
 
 stringExpression
-    : stringExpression se=(Equals|NotEqual) stringExpression
-    | STR
+    : stringExpression se=(Equals|NotEqual) stringExpression #stringExpr
+    | STR #onlyStringExpr
     ;
 
 /* condition expression block for loop*/
 cond_expressn
     : '(' booleanExpression ')'
     ;
+
 
 /* if condition block syntax */
 ifCondition

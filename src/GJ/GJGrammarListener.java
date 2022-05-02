@@ -1,3 +1,5 @@
+package GJ;
+
 // Generated from GJGrammar.g4 by ANTLR 4.9
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -37,57 +39,221 @@ public interface GJGrammarListener extends ParseTreeListener {
 	 */
 	void exitTerms(GJGrammarParser.TermsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GJGrammarParser#expr}.
+	 * Enter a parse tree produced by the {@code integerAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr(GJGrammarParser.ExprContext ctx);
+	void enterIntegerAssignment(GJGrammarParser.IntegerAssignmentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GJGrammarParser#expr}.
+	 * Exit a parse tree produced by the {@code integerAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr(GJGrammarParser.ExprContext ctx);
+	void exitIntegerAssignment(GJGrammarParser.IntegerAssignmentContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GJGrammarParser#booleanExpression}.
+	 * Enter a parse tree produced by the {@code booleanAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterBooleanExpression(GJGrammarParser.BooleanExpressionContext ctx);
+	void enterBooleanAssignment(GJGrammarParser.BooleanAssignmentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GJGrammarParser#booleanExpression}.
+	 * Exit a parse tree produced by the {@code booleanAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitBooleanExpression(GJGrammarParser.BooleanExpressionContext ctx);
+	void exitBooleanAssignment(GJGrammarParser.BooleanAssignmentContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code operatorComparison}
+	 * Enter a parse tree produced by the {@code stringAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterStringAssignment(GJGrammarParser.StringAssignmentContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stringAssignment}
+	 * labeled alternative in {@link GJGrammarParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitStringAssignment(GJGrammarParser.StringAssignmentContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code expressionBoolean}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpressionBoolean(GJGrammarParser.ExpressionBooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code expressionBoolean}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpressionBoolean(GJGrammarParser.ExpressionBooleanContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code onlyBooleanIdentifier}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnlyBooleanIdentifier(GJGrammarParser.OnlyBooleanIdentifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onlyBooleanIdentifier}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnlyBooleanIdentifier(GJGrammarParser.OnlyBooleanIdentifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code onlyBooleanExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnlyBooleanExpression(GJGrammarParser.OnlyBooleanExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onlyBooleanExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnlyBooleanExpression(GJGrammarParser.OnlyBooleanExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code booleanParenthesisExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBooleanParenthesisExpression(GJGrammarParser.BooleanParenthesisExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code booleanParenthesisExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBooleanParenthesisExpression(GJGrammarParser.BooleanParenthesisExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code booleanComparisonExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBooleanComparisonExpression(GJGrammarParser.BooleanComparisonExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code booleanComparisonExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBooleanComparisonExpression(GJGrammarParser.BooleanComparisonExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code booleanConnectorExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBooleanConnectorExpression(GJGrammarParser.BooleanConnectorExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code booleanConnectorExpression}
+	 * labeled alternative in {@link GJGrammarParser#booleanExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBooleanConnectorExpression(GJGrammarParser.BooleanConnectorExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code numberComparisonExpression}
 	 * labeled alternative in {@link GJGrammarParser#arithmeticComparison}.
 	 * @param ctx the parse tree
 	 */
-	void enterOperatorComparison(GJGrammarParser.OperatorComparisonContext ctx);
+	void enterNumberComparisonExpression(GJGrammarParser.NumberComparisonExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code operatorComparison}
+	 * Exit a parse tree produced by the {@code numberComparisonExpression}
 	 * labeled alternative in {@link GJGrammarParser#arithmeticComparison}.
 	 * @param ctx the parse tree
 	 */
-	void exitOperatorComparison(GJGrammarParser.OperatorComparisonContext ctx);
+	void exitNumberComparisonExpression(GJGrammarParser.NumberComparisonExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GJGrammarParser#operator}.
+	 * Enter a parse tree produced by the {@code numberMulDivExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
 	 * @param ctx the parse tree
 	 */
-	void enterOperator(GJGrammarParser.OperatorContext ctx);
+	void enterNumberMulDivExpr(GJGrammarParser.NumberMulDivExprContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GJGrammarParser#operator}.
+	 * Exit a parse tree produced by the {@code numberMulDivExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
 	 * @param ctx the parse tree
 	 */
-	void exitOperator(GJGrammarParser.OperatorContext ctx);
+	void exitNumberMulDivExpr(GJGrammarParser.NumberMulDivExprContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GJGrammarParser#stringExpression}.
+	 * Enter a parse tree produced by the {@code numberTernaryExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
 	 * @param ctx the parse tree
 	 */
-	void enterStringExpression(GJGrammarParser.StringExpressionContext ctx);
+	void enterNumberTernaryExpr(GJGrammarParser.NumberTernaryExprContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GJGrammarParser#stringExpression}.
+	 * Exit a parse tree produced by the {@code numberTernaryExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
 	 * @param ctx the parse tree
 	 */
-	void exitStringExpression(GJGrammarParser.StringExpressionContext ctx);
+	void exitNumberTernaryExpr(GJGrammarParser.NumberTernaryExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code numberParenthesesExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterNumberParenthesesExpr(GJGrammarParser.NumberParenthesesExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code numberParenthesesExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitNumberParenthesesExpr(GJGrammarParser.NumberParenthesesExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code onlyNumberExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnlyNumberExpr(GJGrammarParser.OnlyNumberExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onlyNumberExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnlyNumberExpr(GJGrammarParser.OnlyNumberExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code onlyNumberIdentifier}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnlyNumberIdentifier(GJGrammarParser.OnlyNumberIdentifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onlyNumberIdentifier}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnlyNumberIdentifier(GJGrammarParser.OnlyNumberIdentifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code numberAddSubExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void enterNumberAddSubExpr(GJGrammarParser.NumberAddSubExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code numberAddSubExpr}
+	 * labeled alternative in {@link GJGrammarParser#operator}.
+	 * @param ctx the parse tree
+	 */
+	void exitNumberAddSubExpr(GJGrammarParser.NumberAddSubExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code stringExpr}
+	 * labeled alternative in {@link GJGrammarParser#stringExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterStringExpr(GJGrammarParser.StringExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stringExpr}
+	 * labeled alternative in {@link GJGrammarParser#stringExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitStringExpr(GJGrammarParser.StringExprContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code onlyStringExpr}
+	 * labeled alternative in {@link GJGrammarParser#stringExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnlyStringExpr(GJGrammarParser.OnlyStringExprContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onlyStringExpr}
+	 * labeled alternative in {@link GJGrammarParser#stringExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnlyStringExpr(GJGrammarParser.OnlyStringExprContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link GJGrammarParser#cond_expressn}.
 	 * @param ctx the parse tree
