@@ -10,17 +10,14 @@ Worked on creating grammar rules and g4 file rules
 Expected contribution for milestone-2:
 Intermediate format to runtime format contribution
 
-
 2. Krishna Pandya
 
 Till now :
 Created grammar rules by removing left recursion
 Added g4 file to github
 
-
 Expected contribution for milestone-2: 
 Generation of parse-tree from tokens
-
 
 3. Jay Patel
 
@@ -30,7 +27,6 @@ Created summary for milestone-1.
 
 Expected contribution for milestone-2: 
 Generation of intermediate code from parse tree
-
 
 4. Keyur Desai
 
@@ -42,16 +38,28 @@ Expected contribution for milestone-2:
 Verify source-code and work on token generations and errors 
 
 
-
-
 5. Anand Bhattacharya
 
-Till now : 
-
+Till now :
 Worked on Language syntax and design  
 Added design rules for milestone-1
 
-
 Expected contribution for milestone-2: 
-Verity Source code and work on compilation errors for token generations
+Verify Source code and work on compilation errors for token generations
 
+**Milestone 2 Contribution**
+
+1. Dhruvi Modi
+Worked on handling the runtime evaluation of the intermediate code(GJRuntime.java)
+
+2. Krishna Pandya
+worked on Grammar modification and intermediate code generation and runtime mapping with compiled files
+
+3. Jay Patel
+Worked on compiling sample code to intermediate code using ANTLR files and compiler.
+
+4. Keyur Desai
+Worked on changing sample code to intermediate code generations and debugging the exceptions.
+
+5. Anand Bhattacharya
+Worked on conversion of Data types in the runtime.
