@@ -67,15 +67,17 @@ instead of local file path.
 
 
 For Developers:
-Step 1: 
-Install ANTLR4 step by step guide is provided.
+
+Step 1: Install ANTLR4 step by step guide is provided.
 https://www.youtube.com/watch?v=p2gIBPz69DM
-Step 2:
-compile using command 'antlr4 GJGrammar.g4' in command prompt.
-Step 3:
-run using grun 'GJGrammar.g4 program', here prgram is starting symbol of grammar.
-Step 4:
-Compile java files using 'javac GJGrammar*.java'
+
+Step 2:compile using command 'antlr4 GJGrammar.g4' in command prompt.
+
+Step 3:run using grun 'GJGrammar.g4 program', here prgram is starting symbol of grammar.
+
+Step 4:Compile java files using 'javac GJGrammar*.java'
+
+
 Environment used for the project: Windows system
  
 Link to the YouTube video : https://www.youtube.com/watch?v=iBnJ_Os4QAg
