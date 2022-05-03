@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.HashMap;
 
 /**
- * This class
+ * This class evaluates the run() function for execution of instructions found in the intermediate code(read by runtimeMainGJ).
  * @author:Dhruvi Modi
  * @since April-28-2022
  * @version 1.0
@@ -57,14 +57,14 @@ public class GJRuntime implements GJRuntimeConstants
 			case LAKH:
 				handleShow(listIns);
 				break;
-
+			//This case handles arithmetic instructions
 			case ADDITION:
 			case SUBTRACTION:
 			case MULTIPLY:
 			case DIVIDE:
 				handleArithmetic(listIns);
 				break;
-
+			//This case handles boolean comparison instruction
 			case VADHARE:
 			case VADHARE_K_SARKHU:
 			case OCHHU:
@@ -73,27 +73,27 @@ public class GJRuntime implements GJRuntimeConstants
 			case SARKHU_NAHI:
 				handleBool(listIns);
 				break;
-
+			//This case handles starting of if conditon instruction
 			case JO_START:
 				pc = handleIf(++pc);
 				break;
-
+			//This case handles starting of elseIf conditon instruction
 			case NAHITOH_JO_START:
 				pc = handleElseIf(++pc);
 				break;
-
+			//This case handles starting of else conditon instruction
 			case NAHITOH_START:
 				pc = handleElse(++pc);
 				break;
-
+			//This case handles starting of while loop instruction
 			case SUDHI_START:
 				pc = handleWhile(++pc);
 				break;
-
+			//This case handles unary minus instruction
 			case UNARY_MINUS:
 				handleUM(listIns);
 				break;
-
+			//This case handles comprison between boolean instruction
 			case OR:
 			case AND:
 				handleBool(listIns);
